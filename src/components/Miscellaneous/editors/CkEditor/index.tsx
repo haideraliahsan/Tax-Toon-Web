@@ -13,7 +13,7 @@ const CkEditorContainer = () => {
             <CommonCardHeading smallHeading={CKEditorExample} />
             <CardBody>
               <CKEditor
-                editor={ClassicEditor}
+                editor={ClassicEditor as any}
                 data="<p>Hello from CKEditor 5!</p>"
               />
             </CardBody>
