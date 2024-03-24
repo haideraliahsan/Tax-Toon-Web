@@ -1,5 +1,5 @@
 import { Row, Col, Card, CardBody } from "reactstrap";
-import CountUp from "react-countup";
+
 import ProfitAndLoss from "./ProfitAndLoss";
 import { ticketData } from "Data/SupportTicket";
 
@@ -14,7 +14,7 @@ const TicketList = () => {
                 <Col xs={5}>
                   <span>{item.title}</span>
                   <h4 className="total-num counter">
-                    <CountUp end={item.num} className="text-dark" />
+                   
                   </h4>
                 </Col>
                 <ProfitAndLoss />

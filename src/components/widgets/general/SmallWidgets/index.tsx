@@ -1,6 +1,6 @@
 import { Card, CardBody, Col, Row } from "reactstrap";
 import {smallWidgetsData} from "Data/widgets/general/index";
-import CountUp from "react-countup";
+
 import SvgIcon from "CommonElements/Icons/SvgIcon";
 import WidgetsWithChart from "./WidgetsWithChart";
 
@@ -15,7 +15,7 @@ const SmallWidgets = () => {
                 <span className="f-light">{data.title}</span>
                 <div className="d-flex align-items-end gap-1">
                   <h4>
-                    <CountUp suffix={data.suffix ? data.suffix : ""} prefix={data.prefix ? data.prefix : ""} duration={5} separator="," end={data.total}/>
+                  
                   </h4>
                   <span className={`font-${data.color} f-12 f-w-500`}>
                     <i className={`icon-arrow-${data.gros < 50 ? "down" : "up"}`}/>
