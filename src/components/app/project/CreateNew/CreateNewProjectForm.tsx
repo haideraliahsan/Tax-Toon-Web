@@ -84,14 +84,15 @@ const CreateNewProjectForm = () => {
       </Row>
       <Row className="g-md-3 g-2">
         <Col sm={4}>
-          <FormGroup class="create-group">
-            <Label>{Issues}</Label>
-            <select placeholder="Select Issues" className="form-control digits" required {...register("issues", { required: true })}>
-              <option>{Small}</option>
-              <option>{Medium}</option>
-              <option>{Big}</option>
-            </select>
-          </FormGroup>
+        <FormGroup className="create-group">
+          <Label>{Issues}</Label>
+          <select className="form-control digits" required {...register("issues", { required: true })}>
+            <option value="">Select Issues</option>
+            <option>{Small}</option>
+            <option>{Medium}</option>
+            <option>{Big}</option>
+          </select>
+        </FormGroup>
         </Col>
         <Col sm={4}>
           <FormGroup class="create-group">
